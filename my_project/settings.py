@@ -23,10 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-h7ppqzloo*$s&r*+ykl*8m!lrm9g@)bdh2hsiapv1-7od)p_oi"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['Sharnell.pythonanywhere.com']
 
 # Application definition
 
@@ -116,8 +115,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.1/howto/static-files/
 
-STATIC_URL = "static/"
-
+STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'static_publico'
 
 # Email
 # https://docs.djangoproject.com/en/6.1/topics/email/#topic-email-configuration
